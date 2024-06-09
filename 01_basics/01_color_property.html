@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Property</title>
+    <link rel="stylesheet" href="./01_color_property.css">
+    <style>
+/*      universal selector, has least priority and applied to all elements, generally used for margins and padding of window
+        *{
+            color: cornflowerblue;
+        }
+         */
+        h1{
+            color:chocolate;
+        }
+        p{
+            color: blueviolet;
+        }
+        #style_id{
+            color: dimgrey;
+        }
+        .style_class{
+            color: yellowgreen;
+        }
+        #group_selector_1, .group_selector_2{
+            color: royalblue;
+        }
+        div{
+            p{
+                color:indianred;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, iusto.</p>
+    <h2 style="color: chartreuse;">Inline Styling</h2>
+    <h1 style="color: green;">Inline Styling has more priority</h1>
+    <h3>External Styling</h3>
+    <h4>External Styling has least priority</h4>
+    <h1>Styling through style tag more priority than External Styling</h1>
+    <h1 style="color: darkolivegreen;">Inner Styling has top priority</h4>
+    <div id="style_id">Styling through id(id is used to give uniqueness to element)</div>
+    <div class="style_class">Styling through class(used to group elements)</div>
+    <div class="style_class">Same style under same class</div>
+    <div id="group_selector_1">Same styling using grouping</div>
+    <div class="group_selector_2">Same styling using grouping</div>
+    <div>
+        <p>Styling using Descendant Selector</p>
+    </div>
+</body>
+</html>
