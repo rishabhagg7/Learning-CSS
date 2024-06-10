@@ -1,0 +1,83 @@
+.box{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+#box1{
+    background-color: lime;
+}
+#box1:hover{
+    transform: rotate(45deg);
+}
+#box2{
+    background-color: blueviolet;
+}
+#box2:hover{
+    transform: rotate(180deg);
+}
+#box3{
+    background-color: indianred;
+}
+#box3:hover{
+    transform: rotateX(45deg)
+}
+#box4{
+    background-color: violet;
+}
+#box4:hover{
+    transform: rotateY(45deg)
+}
+#box5{
+    background-color: lime;
+}
+#box5:hover{
+    transform: scale(2);
+}
+#box6{
+    background-color: blueviolet;
+}
+#box6:hover{
+    transform: scale(4);
+}
+#box7{
+    background-color: indianred;
+}
+#box7:hover{
+    transform: scaleX(2);
+}
+#box8{
+    background-color: violet;
+}
+#box8:hover{
+    transform: scaleY(2);
+}
+#box9{
+    background-color: lime;
+}
+#box9:hover{
+    transform: translate(50px)
+}
+#box10{
+    background-color: blueviolet;
+}
+#box10:hover{
+    transform: translate(50px,50px)
+}
+#box11{
+    background-color: indianred;
+}
+#box11:hover{
+    transform: translateX(50px)
+}
+#box12{
+    background-color: violet;
+}
+#box12:hover{
+    transform: translateY(50px)
+}
