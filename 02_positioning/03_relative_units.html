@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+        }
+        #first{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            font-size: 15px;
+        }
+        #second{
+            background-color: blueviolet;
+            width: 50%;
+            height: 30%;
+            font-size: 2em; /* 2*15 = 30px */
+        }
+        #third{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            /* font size if 25px here */
+        }
+        #fourth{
+            width: 50%;
+            height: 30%;
+            background-color: blueviolet;
+            font-size: 2rem; /* font size 2*25px = 50px*/
+        }
+        #fifth{
+            height: 50vh;
+            width: 90vw;
+            background-color: red;
+        }
+        #sixth{
+            height: 40vh;
+            width: 50vw;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        First
+        <div id="second">
+            Second
+        </div>
+    </div>
+    <br/>
+    <div id="third">
+        Third
+        <div id="fourth">
+            Fourth
+        </div>
+    </div>
+    <div id="fifth">
+        Fifth
+        <div id="sixth">
+            Sixth
+        </div>
+    </div>
+</body>
+</html>
